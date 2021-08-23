@@ -2,19 +2,21 @@
 
 - 用于[个人网站](https://frankwuzp.github.io)的CDN加速
 
-- 可将hexo中用到静态资源的地方（如前端库）换成CDN加速
+- 可将 hexo 中用到静态资源的地方（如前端库）换成CDN加速
 
-- 使用jsdeliver的资源
+- 使用 jsdeliver 的资源
 
 - 资源引用的范例
 
-  > ` https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径`
+  > `https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径`
+  >
   > 如 `https://cdn.jsdelivr.net/gh/frankwuzp/BlogCDN/js-sweetcloud/gotop.js`
+  >
   > 注：jsdelivr可以自动生成.min版的js和css，在设置js及css路径中可直接写.min.xxx
 
 ## 状况应对
 
-**- cdn 没能及时缓存更新，引用不了新上传的加速文件？**
+- **cdn 没能及时缓存更新，引用不了新上传的加速文件？**
 
 解决思路：
 
