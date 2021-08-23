@@ -19,8 +19,10 @@
   	<title>Matrix</title>
   </head>
   <main>
-      <script type="text/css">引入 css 文件</script>
-      <script type="text/javascript">引入 js 文件</script>
+    //引入 css 文件
+    <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/gh/frankwuzp/BlogCDN/matrix/style.css"/>
+    //引入 js 文件
+  	<script src="//cdn.jsdelivr.net/gh/frankwuzp/BlogCDN/matrix/script.js"></script> 
   </main>
   </html>
   ```
