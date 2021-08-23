@@ -1,4 +1,3 @@
-<script type="text/javascript">
 function r(from, to) {
   return ~~(Math.random() * (to - from + 1) + from);
 }
@@ -110,4 +109,3 @@ const main = document.querySelector('main');
 for (let i = 0; i < 50; ++i) {
   new Rain({ target: main, row: 50 });
 }
-</style>
