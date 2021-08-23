@@ -1,3 +1,4 @@
+<script type="text/javascript">
 function r(from, to) {
   return ~~(Math.random() * (to - from + 1) + from);
 }
@@ -52,7 +53,7 @@ class Trail {
       let item = this.list[offset + i - size + 1];
       this.body.push(item);
     }
-    this.options.offset = 
+    this.options.offset =
       (offset + 1) % (this.list.length + size - 1);
   }
 }
@@ -76,10 +77,10 @@ class Rain {
         loop(() => c.mutate(), r(1e3, 5e3));
       }
     }
-    this.trail = new Trail(chars, { 
-      size: r(10, 30), offset: r(0, 100) 
+    this.trail = new Trail(chars, {
+      size: r(10, 30), offset: r(0, 100)
     });
-    this.element.appendChild(root); 
+    this.element.appendChild(root);
   }
   drop() {
     let trail = this.trail;
@@ -109,3 +110,4 @@ const main = document.querySelector('main');
 for (let i = 0; i < 50; ++i) {
   new Rain({ target: main, row: 50 });
 }
+</style>
