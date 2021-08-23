@@ -9,10 +9,10 @@
 - 资源引用的范例
 
   > ` https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径`
-  >
+  > 如 `https://cdn.jsdelivr.net/gh/frankwuzp/BlogCDN/js-sweetcloud/gotop.js`
   > 注：jsdelivr可以自动生成.min版的js和css，在设置js及css路径中可直接写.min.xxx
-  
-  
+
+
 
 ## Ref
 
@@ -20,7 +20,7 @@
 
 - [jsDelivr - A free, fast, and reliable CDN for open source](https://www.jsdelivr.com/?docs=gh)
 
-  
+
 
 ## Changlog
 
