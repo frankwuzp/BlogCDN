@@ -4,11 +4,29 @@ function r(from, to) {
 function pick() {
   return arguments[r(0, arguments.length - 1)];
 }
+//定义字符串，参考 Unicode 编码集：
+//https://unicode-table.com/cn/blocks/general-punctuation/
 function getChar() {
   return String.fromCharCode(pick(
-    r(0x3041, 0x30ff),
-    r(0x2000, 0x206f),
-    r(0x0020, 0x003f)
+    //原有的注释掉：r(0x3041, 0x30ff), //日文平假名和片假名
+    //原有的注释掉：r(0x2000, 0x206f), //常用标点（不建议使用）
+    //原有的注释掉：r(0x0020, 0x003f), //数字和符号
+    r(0x3105, 0x3129), //GB 2312 注音字母
+    r(0x0021, 0x0040), //ASCII 标点和符号
+    r(0x0061, 0x007A), //小写拉丁字母
+    r(0x03B1, 0x03C9), //希腊字母（部分）
+    r(0x1820, 0x1877), //蒙古文、满文
+    r(0x1880, 0x18AA), //藏文和梵文
+    r(0x4E00, 0x4E66), //中日韩统一表意文字（一笔部首）
+    r(0x5196, 0X51C3), //中日韩统一表意文字（二笔部首）
+    r(0xFE30, 0xFE44), //垂直变体符号-中日韩兼容形式
+    r(0xFF01, 0xFF5E), //全角ASCII（大小写字母、数字和符号）
+    r(0x7C73, 0x7C73), //米
+    r(0x65AF, 0x65AF), //斯
+    r(0x7279, 0x7279), //特
+    r(0x4E4C, 0x4E4C), //乌
+    r(0x9CB8, 0x9CB8), //鲸
+    r(0x9C7C, 0x9C7C), //鱼
   ));
 }
 function loop(fn, delay) {
